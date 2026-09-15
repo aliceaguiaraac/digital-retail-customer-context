@@ -9,7 +9,8 @@ During the exploration, I identified a case where a vehicle preference selected 
 From that observation, I mapped the customer journey, designed a measurement plan and used AI to generate a **synthetic behavioural dataset** for Power BI to demonstrate how I would measure, analyse and investigate the behaviour.
 
 
-[Open the interactive Power BI report](https://app.powerbi.com/view?r=eyJrIjoiNTJlNWI5ZmEtNjQ5MC00ZmYzLWJmZGItN2U3M2U2YjhlZTE1IiwidCI6IjM1ODAxOWMyLWZmMWQtNGRlOC04MDBlLTk2YTRkMzgwNzMwYyIsImMiOjl9)
+
+<p data-sourcepos="9:1-9:189" dir="auto"><a href="https://app.powerbi.com/view?r=eyJrIjoiYmJjOTg5ZmYtYjAwNC00Y2U0LWIzNDItYmI2MDM2ZTM1NTgzIiwidCI6IjM1ODAxOWMyLWZmMWQtNGRlOC04MDBlLTk2YTRkMzgwNzMwYyIsImMiOjl9" rel="nofollow">Click here to open the interactive Power BI report</a></p>
 
 ## Analytics Question
 
