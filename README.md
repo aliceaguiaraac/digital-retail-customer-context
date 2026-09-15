@@ -1,47 +1,66 @@
 # Digital Retail Journey | Customer Context Retention
 
+This project started as an independent Digital Analytics exercise.
+
+I took the initiative to explore a publicly available automotive digital retail journey and look for a real customer behaviour that could be turned into an analytics question.
+
+During the exploration, I identified a case where a vehicle preference selected earlier in the journey was not preserved when the user moved to available stock, requiring the preference to be manually selected again.
+
+From that observation, I mapped the customer journey, designed a measurement plan and used AI to generate a **synthetic behavioural dataset** for Power BI to demonstrate how I would measure, analyse and investigate the behaviour.
 
 
-Power BI digital analytics case developed to analyse customer context retention across a digital retail journey, from vehicle selection to available stock and commercial intent.
+[Open the interactive Power BI report](https://app.powerbi.com/view?r=eyJrIjoiNTJlNWI5ZmEtNjQ5MC00ZmYzLWJmZGItN2U3M2U2YjhlZTE1IiwidCI6IjM1ODAxOWMyLWZmMWQtNGRlOC04MDBlLTk2YTRkMzgwNzMwYyIsImMiOjl9)
 
-The project was inspired by publicly observable behaviour on an automotive digital retail experience and uses synthetic behavioural data created exclusively for demonstration purposes.
+## Analytics Question
 
-The analysis focuses on whether selected vehicle preferences are preserved during the Vehicle Selection → Stock hand-off, how often customers need to manually reapply their preferences, and whether context preservation is associated with differences in downstream progression.
-<p data-sourcepos="9:1-9:189" dir="auto"><a href="https://app.powerbi.com/view?r=eyJrIjoiNTJlNWI5ZmEtNjQ5MC00ZmYzLWJmZGItN2U3M2U2YjhlZTE1IiwidCI6IjM1ODAxOWMyLWZmMWQtNGRlOC04MDBlLTk2YTRkMzgwNzMwYyIsImMiOjl9" rel="nofollow">Click here to open the Digital Retail Journey</a></p>
+The analysis focuses on three main questions:
+
+- Is the selected vehicle context preserved during the **Vehicle Selection → Stock** hand-off?
+- When context is lost, how often do users manually reapply their vehicle preference?
+- Is context preservation associated with differences in downstream progression towards commercial intent?
+
+## Journey Analysed
+
+The main journey analysed in the report is:
+
+**Vehicle Line Selected → Available Vehicles Click → Stock Results → Vehicle Detail → Proposal Start → Proposal Submit**
+
+The analysis also compares downstream behaviour between sessions where customer context was preserved and sessions where it was not.
 
 ## Key Insights
 
-- Stock-entry sessions and progression through the main digital retail journey
-- Context retention at the transition to available stock
+- Progression through the main stock-to-proposal journey
+- Context retention at Stock entry
 - Manual vehicle-line reapplication after context loss
-- Vehicle-detail progression
+- Progression from Stock Results to Vehicle Detail
 - Proposal start and submission rates
-- Comparison of downstream progression between preserved and non-preserved context sessions
+- Downstream comparison between preserved and non-preserved context sessions
 
 ## Key Finding
 
-In the synthetic scenario, a meaningful share of stock-entry sessions did not preserve the previously selected vehicle context, and many of those sessions manually reapplied the vehicle line. However, downstream proposal submission remained broadly similar between preserved and non-preserved sessions.
-The main takeaway for me was not to force a conversion story where the data does not support one.
+In the synthetic scenario, a meaningful share of stock-entry sessions did not preserve the previously selected vehicle context, and many of those sessions manually reapplied the vehicle line.
+
+However, proposal submission remained broadly similar between sessions where context was preserved and those where it was not.
+
+There is also a meaningful drop between **Stock Results and Vehicle Detail** that should be investigated further, but the synthetic data does not suggest that context loss is the main driver.
+
+### Main takeaway
+
+**Identify the friction, measure it, but do not force a conversion story when the data does not support one.**
 
 ## Recommendation
 
-Preserve the selected vehicle context across the Vehicle Selection → Stock hand-off to reduce unnecessary customer effort.
-
-The commercial impact should be validated using real behavioural data before attributing conversion loss to this friction.
+Track **context retention** and **manual reapplication** as journey-quality indicators, and investigate the **Stock Results → Vehicle Detail** drop using real behavioural and qualitative customer data.
 
 ## Next Step
 
-Implement context persistence and run an A/B test comparing the current and proposed hand-offs.
+Validate the journey using real behavioural and qualitative data.
 
-Monitor:
-- Context retention
-- Manual vehicle-line reapplication
-- Vehicle-detail progression
-- Proposal submission
+If context loss appears to affect customer effort or downstream progression, test a context-preserving hand-off through an A/B experiment.
 
 ## Measurement Approach
 
-The project includes a proposed event-tracking framework designed for the analysis.
+As part of the exercise, I designed a proposed event-tracking framework to support the analysis.
 
 Example events include:
 
@@ -53,13 +72,27 @@ Example events include:
 - `proposal_start`
 - `proposal_submit`
 
-These event names are part of the proposed measurement plan.
+
+The measurement plan also includes contextual parameters such as:
+
+- Vehicle model
+- Vehicle line
+- Device type
+- Journey step
+- Source page
+- CTA
+- Context preservation status
+- Session identifier
 
 ## Data
 
-Synthetic behavioural data generated to simulate realistic digital retail journeys for demonstration purposes.
+The report uses **synthetic behavioural data generated to simulate realistic digital retail journeys for demonstration purposes**.
 
-## Tools
+Synthetic data was deliberately used because no internal customer or production analytics data was available.
+
+The dataset allows the analytical approach, data model, KPIs, funnel logic and segmentation strategy to be demonstrated without making claims about actual business performance.
+
+## Tools & Techniques
 
 - Power BI
 - DAX
@@ -68,8 +101,11 @@ Synthetic behavioural data generated to simulate realistic digital retail journe
 - Digital Analytics
 - Customer Journey Analysis
 - Funnel Analysis
+- Segmentation
 - Measurement Planning
+- KPI Design
 - A/B Testing Framework
+- AI-assisted Synthetic Data Generation
 
 ## Report Preview
 
