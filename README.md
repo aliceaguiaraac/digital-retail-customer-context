@@ -21,6 +21,7 @@ The analysis focuses on whether selected vehicle preferences are preserved durin
 ## Key Finding
 
 In the synthetic scenario, a meaningful share of stock-entry sessions did not preserve the previously selected vehicle context, and many of those sessions manually reapplied the vehicle line. However, downstream proposal submission remained broadly similar between preserved and non-preserved sessions.
+The main takeaway for me was not to force a conversion story where the data does not support one.
 
 ## Recommendation
 
