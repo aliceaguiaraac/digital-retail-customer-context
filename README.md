@@ -4,7 +4,7 @@
 
 Power BI digital analytics case developed to analyse customer context retention across a digital retail journey, from vehicle selection to available stock and commercial intent.
 
-The project was inspired by publicly observable behaviour on the Mercedes-Benz digital retail experience and uses synthetic behavioural data created exclusively for demonstration purposes.
+The project was inspired by publicly observable behaviour on an automotive digital retail experience and uses synthetic behavioural data created exclusively for demonstration purposes.
 
 The analysis focuses on whether selected vehicle preferences are preserved during the Vehicle Selection → Stock hand-off, how often customers need to manually reapply their preferences, and whether context preservation is associated with differences in downstream progression.
 <p data-sourcepos="9:1-9:189" dir="auto"><a href="https://app.powerbi.com/view?r=eyJrIjoiNTJlNWI5ZmEtNjQ5MC00ZmYzLWJmZGItN2U3M2U2YjhlZTE1IiwidCI6IjM1ODAxOWMyLWZmMWQtNGRlOC04MDBlLTk2YTRkMzgwNzMwYyIsImMiOjl9" rel="nofollow">Click here to open the Digital Retail Journey</a></p>
@@ -52,7 +52,7 @@ Example events include:
 - `proposal_start`
 - `proposal_submit`
 
-These event names are part of the proposed measurement plan and are not claimed to be Mercedes-Benz production analytics events.
+These event names are part of the proposed measurement plan.
 
 ## Data
 
