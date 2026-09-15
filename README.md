@@ -1,6 +1,6 @@
 # Digital Retail Journey | Customer Context Retention
 
-<p data-sourcepos="9:1-9:189" dir="auto"><a href="https://app.powerbi.com/view?r=eyJrIjoiNTJlNWI5ZmEtNjQ5MC00ZmYzLWJmZGItN2U3M2U2YjhlZTE1IiwidCI6IjM1ODAxOWMyLWZmMWQtNGRlOC04MDBlLTk2YTRkMzgwNzMwYyIsImMiOjl9" rel="nofollow">Digital Retail Journey</a></p>
+<p data-sourcepos="9:1-9:189" dir="auto"><a href="https://app.powerbi.com/view?r=eyJrIjoiNTJlNWI5ZmEtNjQ5MC00ZmYzLWJmZGItN2U3M2U2YjhlZTE1IiwidCI6IjM1ODAxOWMyLWZmMWQtNGRlOC04MDBlLTk2YTRkMzgwNzMwYyIsImMiOjl9" rel="nofollow">Click here to open the Digital Retail Journey</a></p>
 
 Power BI digital analytics case developed to analyse customer context retention across a digital retail journey, from vehicle selection to available stock and commercial intent.
 
