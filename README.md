@@ -70,4 +70,6 @@ Synthetic behavioural data generated to simulate realistic digital retail journe
 - Measurement Planning
 - A/B Testing Framework
 
+## Report Preview
+
 ![Digital Retail Journey](digitalretailjourney.png)
